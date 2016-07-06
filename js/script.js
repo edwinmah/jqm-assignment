@@ -30,7 +30,7 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
 //===========================================
 $(document).ready(function() {
 
-  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
   $.getJSON( flickerAPI, {
     id: "7167652@N06",
