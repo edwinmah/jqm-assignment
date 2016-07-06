@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Hide mobile Safari UI components -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery & jQuery mobile -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Apple Touch Icons & Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+  <body>
+
+<!-- ************ -->
+<!-- external header  -->
+<!-- ************ -->
+    <header data-role="header" data-position="fixed" data-theme="b" role="banner">
+      <h1 class="site-title"></h1>
+      <a href="#home" data-rel="back" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-back">Back</a>
+      <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-icon-info ui-btn-icon-notext" data-overlay-theme="b">Info</a>
+    </header><!-- end header -->
+
+<!-- ************ -->
+<!-- external footer  -->
+<!-- ************ -->
+    <footer data-role="footer" data-position="fixed" data-theme="b" role="contentinfo">
+      <nav data-role="navbar" role="navigation">
+        <ul>
+          <li><a href="#home" data-prefetch="true" class="ui-shadow ui-icon-home ui-btn-icon-top">Home</a></li>
+          <li><a href="#photos" data-prefetch="true" class="ui-shadow ui-icon-camera ui-btn-icon-top">Photos</a></li>
+          <li><a href="#film" data-prefetch="true" class="ui-shadow ui-icon-video ui-btn-icon-top">Films</a></li>
+          <li><a href="#contact" data-prefetch="true" class="ui-shadow ui-icon-mail ui-btn-icon-top">Contact</a></li>
+        </ul>
+      </nav><!-- /navbar -->
+    </footer><!-- end footer -->
+
+<!-- ************ -->
+<!-- Home  -->
+<!-- ************ -->
+    <div id="home" data-title="Your Name" data-role="page">
+      <div data-role="content">
+        <p>Hello.<br>
+        <p>I make <span class="loud">photos</span> <span class="amp">&amp;</span> <span class="loud">films</span>.</p>
+      </div><!-- end content -->
+    </div><!-- end #home -->
+
+<!-- ************ -->
+<!-- Photos  -->
+<!-- ************ -->
+    <div id="photos" data-title="Photos" data-role="page">
+      <div data-role="content">
+        <div class="ui-grid-a xs-grid" id="photolist">
+        </div><!-- grid-a -->
+      </div><!-- end content -->
+    </div><!-- end #film -->
+
+    <!-- individual photo page -->
+    <div data-role="page" id="showphoto" data-title="Photo">
+      <div data-role="content">
+        <div id="myphoto"></div>
+      </div><!-- end content -->
+    </div><!-- end showphoto -->
+
+<!-- ************ -->
+<!-- Film  -->
+<!-- ************ -->
+    <div id="film" data-title="Films" data-role="page">
+      <div data-role="content">
+        <div class="ui-grid-a sm-grid" id="filmlist">
+        </div><!-- grid-a -->
+      </div><!-- end content -->
+    </div><!-- end #film -->
+
+    <!-- film player page -->
+    <div id="filmplayer" data-title="Film" data-role="page">
+      <div data-role="content">
+        <div id="myplayer"></div>
+      </div><!-- end content -->
+    </div><!-- end filmplayer -->
+
+<!-- ************ -->
+<!-- Contact  -->
+<!-- ************ -->
+    <div id="contact" data-title="Contact" data-role="page">
+      <div data-role="content">
+        <div data-role="controlgroup">
+          <a href="mailto:email@email.com" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Email</a>
+          <a href="tel:+12345678900" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">Phone Call</a>
+          <a href="skype:echo123?call" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">Skype</a>
+          <a href="sms:+12345678900" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-comment">Text Message</a>
+        </div><!-- end contact buttons -->
+        <img src="https://unsplash.it/900/900?image=823" alt="A portrait of your name" class="img--center">
+      </div><!-- end content -->
+    </div><!-- end #contact -->
+
+<!-- ************ -->
+<!--! info dialog -->
+<!-- ************ -->
+    <section data-role="dialog" id="info">
+      <header data-role="header" data-theme="b"><h1>About</h1></header>
+      <div data-role="content">
+        <img src="https://unsplash.it/500/500?image=996" alt="A portrait of your name">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div><!-- end content -->
+    </section><!-- end dialog -->
+
+<!-- ************ -->
+<!--! scripts & JSON URLs -->
+<!-- ************ -->
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>

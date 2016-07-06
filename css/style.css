@@ -1,0 +1,118 @@
+/****************/
+/*! Typography  */
+/****************/
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* amp */
+.amp {
+  font-family: "Baskerville", Georgia, Times, serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* loud text */
+.loud {
+  font-weight: 700;
+}
+
+/************/
+/*! Images  */
+/************/
+
+/* Flex Images */
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Centered Images */
+.img--center {
+  display: block;
+  margin: 0 auto;
+}
+
+/**********/
+/*! Grid  */
+/**********/
+
+/* columns */
+[class^="ui-block-"] {
+  padding: .875em;
+}
+
+/* Small */
+@media (max-width: 40em) {
+	.sm-grid [class^="ui-block-"] {
+		width: 100%;
+		float: none;
+	}
+}
+
+/* Extra Small */
+@media (max-width: 30em) {
+	.xs-grid [class^="ui-block-"] {
+		width: 100%;
+		float: none;
+	}
+}
+
+/**********/
+/*! Pages */
+/**********/
+
+/* Background */
+[data-role="page"] {
+  background: #e9e9e9 url('../images/graphics/graphy.png');
+  /* CC BY-SA 3.0 - Subtle Patterns by Atle Mo
+    http://subtlepatterns.com (no changes made) */
+}
+
+/* Home */
+#home p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20vw;
+}
+
+/* Info Dialog */
+#info img {
+  float: left;
+  margin-right: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+#info img + p {
+  margin-top: 0;
+}
+
+/* Contact */
+#contact img {
+  margin-top: 1.25em;
+}
+
+/**********************/
+/*! Intrinsic Ratios  */
+/**********************/
+
+.intrinsic {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.intrinsic--16x9  {
+  padding-bottom: 56.25%;
+}
+
+.intrinsic--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
