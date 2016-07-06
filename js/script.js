@@ -80,7 +80,7 @@ $(document).ready(function() {
   var group = 'group/groupname';
   var album = 'album/album_id';
 
-  $.getJSON('https://vimeo.com/api/v2/' + channel + '/videos.json', function (data) {
+  $.getJSON('https://vimeo.com/api/v2/' + user + '/videos.json', function (data) {
 
     var videocount = 10; // number of videos to get
     var output = '';
