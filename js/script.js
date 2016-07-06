@@ -30,7 +30,7 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
 //===========================================
 $(document).ready(function() {
 
-  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
   $.getJSON( flickerAPI, {
     id: "7167652@N06",
@@ -108,7 +108,7 @@ $(document).ready(function() {
 
 function playFilm(id, title, description) {
   var output = '<div class="intrinsic intrinsic--16x9">';
-      output += '<iframe src="http://player.vimeo.com/video/' + id + '?title=0&amp;byline=0&amp;portrait=0&amp;color=3599d4" class="intrinsic--inner"></iframe>';
+      output += '<iframe src="https://player.vimeo.com/video/' + id + '?title=0&amp;byline=0&amp;portrait=0&amp;color=3599d4" class="intrinsic--inner"></iframe>';
       output += '</div>';
       output += '<div class="video-entry">';
       output += '<h3>' + title + '</h3>';
